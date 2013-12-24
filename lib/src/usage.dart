@@ -5,8 +5,9 @@ import 'dart:collection';
 import 'dart:io';
 import 'dart:mirrors';
 
-import 'package:unmodifiable_collection/unmodifiable_collection.dart';
-import 'package:sequence_zip/sequence_zip.dart';
+import "package:collection/wrappers.dart" show UnmodifiableListView,
+                                               UnmodifiableMapView;
+import "package:collection/iterable_zip.dart" show IterableZip;
 import 'package:path/path.dart' as path;
 import 'package:args/args.dart' show ArgParser, ArgResults;
 import 'package:unscripted/unscripted.dart';
