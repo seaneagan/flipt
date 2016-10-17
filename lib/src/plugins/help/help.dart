@@ -100,7 +100,6 @@ class Help extends Plugin {
       subCommandInvocation = subCommandInvocation.subCommand;
       path.add(subCommandInvocation.name);
     }
-    return path;
   }
 
 }
