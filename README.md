@@ -3,14 +3,14 @@ unscripted [![pub package](https://img.shields.io/pub/v/unscripted.svg)](https:/
 
 *Define command-line interfaces using ordinary dart methods and classes.*
 
-##Installation
+## Installation
 
 ```shell
 pub global activate den
 den install unscripted
 ```
 
-##Usage
+## Usage
 
 The following [greet.dart][greet.dart] script outputs a configurable greeting:
 
@@ -53,7 +53,7 @@ Hi
   Bob!!!
 ```
 
-##Automatic --help
+## Automatic --help
 
 A `--help`/`-h` flag is automatically defined:
 
@@ -95,7 +95,7 @@ Examples:
 
 ```
 
-##Sub-Commands
+## Sub-Commands
 
 Sub-commands are represented as `SubCommand`-annotated instance methods of 
 classes, as seen in the following [server.dart][server.dart]:
@@ -170,7 +170,7 @@ Options:
   -h, --help    Print this usage information.
 ```
 
-##Parsers
+## Parsers
 
 Any value-taking argument (option, positional, rest) can have a "parser"
 responsible for validating and transforming the string passed on the command 
@@ -179,7 +179,7 @@ line.  You can give an argument a parser simply by giving it a type (such as
 `parser` named argument of the argument's metadata (`Option`, `Positional`, or 
 `Rest`).
 
-##Plugins
+## Plugins
 
 Plugins allow you to mixin reusable chunks of cli-specific functionality 
 (options/flags/commands) on top of your base interface.
@@ -188,7 +188,7 @@ To add a plugin to your script, just add an instance of the associated plugin
 class to the `plugins` named argument of your `@Command` annotation.  The 
 following plugins are available:
 
-###Tab Completion
+### Tab Completion
 
 Add bash/zsh [tab completion][tab completion] to your script:
 
@@ -253,12 +253,12 @@ a list of filenames in the current directory.
 
 Tab completion is supported in [cygwin][cygwin], with one minor bug (#64).
 
-###Other Plugins
+### Other Plugins
 
 There are several other plugins planned, and also the ability to write your own
 is planned, see #62.
 
-##Demo
+## Demo
 
 [den][] uses a large subset of the features above.  Run `pub global activate den`
 to install, and then `den -h` to get a feel for the UX provided by unscripted.
